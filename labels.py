@@ -13,7 +13,7 @@ import qrcode
 from fpdf import FPDF
 import os
 
-line1 = "PROJECT"           # Can't be more than 6 for 'QRbox'
+line1 = "PROJECT"           
 line2 = "(555) 867-5309"    # I used my phone number in case the boxes were lost
 num_sheets = 50             
 labels_per_sheet = 6        # Currently only 6 works with my settings
