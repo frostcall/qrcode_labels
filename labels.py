@@ -33,16 +33,16 @@ def place_tag(page_count,count,code):
         elif page_count == 2:       # First row top right
             x = 110
             y = 20
-        elif page_count == 3:       # 2nd row top left
+        elif page_count == 3:       # 2nd row left
             x = -5
             y = 110
-        elif page_count == 4:       # 2nd row top right
+        elif page_count == 4:       # 2nd row right
             x = 110
             y = 110
-        elif page_count == 5:       # 3rd row top left
+        elif page_count == 5:       # 3rd row left
             x = -5
             y = 200
-        elif page_count == 6:       # 3rd row top right
+        elif page_count == 6:       # 3rd row right
             x = 110
             y = 200
 
