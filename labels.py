@@ -1,19 +1,25 @@
 '''
 QR Code PDF Label Maker
-v1.0 December 2021
+v1.01 December 2021
 Tom Howard
+
+Updates:
+Minor additions to comments.
 
 Notes:
 I had a bunch of 6-per page, 3 1/3" x 4" labels (Avery: 94215, 5164, and many others)
 I wanted to create QR Codes to label moving boxes so I could use them with the 'QRbox' app for my phone.
 That app allows you to bring your own codes 
+
+Requirements: qrcode, fpdf
+Install with: pip install qrcode && pip install fpdf
 '''
 
 import qrcode
 from fpdf import FPDF
 import os
 
-line1 = "PROJECT"           
+line1 = "PROJECT"           # Make sure your app of choice can handle this part of the QRCode before wasting a print.
 line2 = "(555) 867-5309"    # I used my phone number in case the boxes were lost
 num_sheets = 50             
 labels_per_sheet = 6        # Currently only 6 works with my settings
